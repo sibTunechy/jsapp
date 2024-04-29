@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="undergradstyle.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container" >
+        <form action="" method="post" id="undergraduateform">
+            <h2>Undergraduate Registration</h2>
+            <div class="content">
+                <div class="input-box" >
+                    <label for="matricno">Matric No</label>
+                    <input type="text" id="matricnum" placeholder="ABC-000-000" name="matricnumb"  required >
+                </div>
+                <div class="input-box" >
+                    <label for="name">Full name</label>
+                    <input type="text" placeholder="Enter Full Name" name="name" required id="full-name">
+                </div>
+                <div class="input-box" >
+                    <label for="programmetype">Programme Type</label>
+                   <select id="programmetype">
+                        <option value="option0">
+                            Select here
+                        </option>
+                        <option value="option1" >
+                            Full Time
+                        </option>
+                        <option value="option2" >
+                            Part Time
+                        </option>
+                    </select>
+                </div>
+                <div class="input-box" >
+                    <label for="department">Choose your Department</label>
+                    <select id="department">
+                        <option value="option0">Select here</option>
+                        <option value="option1">Economics</option>
+                        <option value="Financial Studies">Financial Studies</option>
+                        <option value="Law">Law</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Public Administration">Public Administration</option>
+                        <option value="Industrial Chemistry">Industrial Chemistry</option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Linguistics and Foreign Languages">Linguistics and Foreign Languages</option>
+                        <option value="Political Science">Political Science</option>
+                        <option value="Mass Communication">Mass Communication</option>
+                        <option value="Public Health">Public Health</option>
+                    </select>
+                </div>
+                <div class="input-box" >
+                    <label for="institution">Last Institution attended</label>
+                    <select id="institution">
+                        <option value="option0">Select here</option>
+                        <option value="University of Cairo">University of Cairo</option>
+                        <option value="University of Cape Town">University of Cape Town</option>
+                        <option value="University Of Ilorin">University Of Ilorin</option>
+                        <option value="University of Cape Coast">University of Cape Coast</option>
+                        <option value="Covenant University">Covenant University</option>
+                        <option value="Ahmadu Bello University">Ahmadu Bello University</option>
+                        <option value="University of Nsukka">University of Nsukka</option>
+                        <option value="Ashesi University">Ashesi University</option>
+                        <option value="Ardhi University">Ardhi University</option>
+                        <option value="University of Lagos">University of Lagos</option>
+                        <option value="University of Maiduguri">University of Maiduguri</option>
+                    </select>
+                </div>
+                <span class="gender-title" >Gender</span>
+                <div class="gender-category" >
+                    <input type="radio" name="gender" id="male" >
+                    <label for="gender" >Male</label>
+                    <input type="radio" name="gender" id="female" >
+                    <label for="gender" >Female</label>
+                    <input type="radio" name="gender" id="other" >
+                    <label for="gender" >Other</label>
+                </div>
+            </div>
+            <div class="alert" >
+                <p>By clicking Register, you agree to our <a href="#">School terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+            </div>
+            <p id="message"></p>
+            <div class="button-container">
+                <button type="submit">Register</button>
+            </div>
+        </form>  
+    </div>
+
+    <footer>
+        <p>2024</p>
+      </footer>
+    <script src="undergrad.js"></script>
+</body>
+</html>

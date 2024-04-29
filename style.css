@@ -1,0 +1,130 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    background-color: antiquewhite;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("images/backbg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.select-menu {
+    width: 380px;
+    margin: 150px auto;
+    
+}
+.select-menu .select-btn{
+    display: flex;
+    height: 40px;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.select-menu.active .select-btn i {
+    transform: rotate(-1800deg);
+}
+
+.select-menu .options{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: none;
+}
+.select-menu.active .options {
+    display: block;
+}
+
+.options .option {
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+a{
+    width: auto;
+}
+
+.options .option:hover {
+    background: #f2f2f2;
+}
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 25px;
+    color: #120f0f;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+div .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+div .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+div .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+div .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+div .dropdown-content a:hover {background-color: #f1f1f1}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

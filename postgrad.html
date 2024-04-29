@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="postgradstyle.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container" >
+        <form action="" method="post" id="postgraduateform">
+            <h2>Postgraduate Registration</h2>
+            <div class="content">
+                <div class="input-box" >
+                    <label for="matricno">Matric No</label>
+                    <input type="text" id="matricnum" placeholder="ABC-000-000" name="matricnumb"  required >
+                </div>
+                <div class="input-box" >
+                    <label for="name">Full name</label>
+                    <input type="text" placeholder="Enter Full Name" name="name" required id="full-name">
+                </div>
+                <div class="input-box" >
+                    <label for="dateofbirth">Date of Birth</label>
+                    <input type="date" id="dob" placeholder="Date of Birth" name="dob" required >
+                </div>
+                <div class="input-box" >
+                    <label for="department">Choose your Department</label>
+                    <select id="department">
+                        <option value="option0">Select here</option>
+                        <option value="option1">Economics</option>
+                        <option value="Financial Studies">Financial Studies</option>
+                        <option value="Law">Law</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Public Administration">Public Administration</option>
+                        <option value="Industrial Chemistry">Industrial Chemistry</option>
+                        <option value="Agriculture">Agriculture</option>
+                        <option value="Linguistics and Foreign Languages">Linguistics and Foreign Languages</option>
+                        <option value="Political Science">Political Science</option>
+                        <option value="Mass Communication">Mass Communication</option>
+                        <option value="Public Health">Public Health</option>
+                    </select>
+                </div>
+                <div class="input-box" >
+                    <label for="hostel">Hostel</label>
+                    <select id="hostel">
+                        <option value="option0">Select here</option>
+                        <option value="WhiteHall Hostel">WhiteHall Hostel</option>
+                        <option value="Moremi Hostel">Moremi Hostel</option>
+                        <option value="Maryland Hostel">Maryland Hostel</option>
+                        <option value="Zubirike Quarters">Zubirike Quarters</option>
+                        <option value="TankeHall Hostel">TankeHall Hostel</option>
+                        <option value="Saome Hall">Saome Hall</option>
+                        <option value="Anji Quarters">Anji Quarters</option>
+                        <option value="Linguin Hostel">Linguin Hostel</option>
+                        <option value="PolarHall Hostel">PolarHall Hostel</option>
+                        <option value="Kanari Hall">Kanari Hall</option>
+                        <option value="Sector 17 Hostel">Sector 17 Hostel</option>
+                    </select>
+                </div>
+                <span class="gender-title" >Gender</span>
+                <div class="gender-category" >
+                    <input type="radio" name="gender" id="male" >
+                    <label for="gender" >Male</label>
+                    <input type="radio" name="gender" id="female" >
+                    <label for="gender" >Female</label>
+                    <input type="radio" name="gender" id="other" >
+                    <label for="gender" >Other</label>
+                </div>
+            </div>
+            <div class="alert" >
+                <p>By clicking Register, you agree to our <a href="#">School terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+            </div>
+            <p id="message"></p>
+            <div class="button-container">
+                <button type="submit">Register</button>
+            </div>
+        </form>  
+    </div>
+
+    <footer>
+        <p>2024</p>
+      </footer>
+    <script src="postgrad.js"></script>
+</body>
+</html>
